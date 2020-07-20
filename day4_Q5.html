@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS DAY 4</title>
+        <h3>Question: 5 🌚</h3><br>
+    </head>
+    <body>
+        <p id="input"></p>
+        
+        <script>
+            var reward=['2%','5%','7%','10%']
+            var sales = prompt("Enter the sales during the year: ");
+            if ((sales >= 0) && sales <=5000) {
+                //on the web page
+                document.getElementById("input").innerHTML ="Total Commission You Have Earned☺ : "+reward[0];
+                //at the console
+                console.log("Total Commission You Have Earned☺ : "+reward[0]);
+            }
+            else if ((sales >= 5001) && sales <=10000) {
+                document.getElementById("input").innerHTML ="Total Commission You Have Earned☺ : "+reward[1];
+                console.log("Total Commission You Have Earned☺ : "+reward[1]);
+            }
+            else if ((sales >= 10001) && sales <=20000) {
+                document.getElementById("input").innerHTML ="Total Commission You Have Earned☺ : "+reward[2];
+                console.log("Total Commission You Have Earned☺ : "+reward[2]);
+            }
+            else if(sales >= 40000) {
+                document.getElementById("input").innerHTML ="Total Commission You Have Earned☺ : "+reward[3];
+                console.log("Total Commission You Have Earned☺ : "+reward[3]);
+            }
+        </script>
+    </body> 
+</html>

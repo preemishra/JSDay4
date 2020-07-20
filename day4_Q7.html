@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS DAY 4</title>
+        <h3>Question: 7 🌚</h3><br>
+        <p id="input"></p>
+        <script>
+            
+            function primeNum(num){
+                var temp = [], result = [];
+                for ( let i = 2; i <= num; ++i) {
+                    if (!temp [i]) {
+                        result.push(i);
+                        for (let j = i << 1; j <= num; j += i) {
+                            temp[j] = true;
+                        }
+                     }
+                }
+                return result;
+            }
+
+            var num = prompt("Enter the number upto you want prime numbers: ");
+            console.log("Prime numbers upto " + num + " are: " + primeNum(num));
+
+            document.getElementById("input").innerHTML = "Prime numbers upto " + num + " are: " + primeNum(num);
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>
